@@ -7,3 +7,5 @@ const val START_TIME_MILLIS_INTENT =  "startTimeMillis"
 
 const val NOTIFICATION_CHANNEL_ID = "notificationChannelId"
 const val NOTIFICATION_ID = 123
+
+const val ALARM_RECEIVER_NAME = "com.cheng.android_basic.SHOW_ALARM"
