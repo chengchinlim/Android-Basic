@@ -11,22 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".views.Alarm1Activity">
+        <activity android:name=".views.CustomViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.NotificationActivity">
+        <activity android:name=".views.Alarm1Activity">
 
         </activity>
+        <activity android:name=".views.NotificationActivity"></activity>
         <activity android:name=".views.Parcelize2Activity" />
         <activity android:name=".views.ParcelizeActivity" />
-        <receiver android:name="com.cheng.android_basic.broadcast.MyBroadcastReceiver">
+
+        <receiver android:name=".broadcast.MyBroadcastReceiver">
             <intent-filter>
                 <action android:name="com.cheng.android_basic.SHOW_ALARM" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
